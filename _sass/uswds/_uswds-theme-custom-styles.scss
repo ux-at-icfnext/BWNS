@@ -1,0 +1,122 @@
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS THEME CUSTOM STYLES
+----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
+----------------------------------------
+*/
+/*colors*/
+$samhsa-blue: #1E384B;
+$color-white: #ffffff;
+
+.grid-container {
+  max-width: 76em;
+}
+
+.hhs-icon {
+  width: 30px;
+  margin-right: 5px;
+  vertical-align: middle;
+  fill: $samhsa-blue;
+}
+
+.usa-banner {
+  .usa-banner__inner {
+    margin-left: 0;
+    padding-left: 1em;
+  }
+
+  .usa-banner__header-text {
+    font-size: 1.25em !important;
+  }
+}
+
+.page-header-title {
+  background: $samhsa-blue;
+  padding: 1em;
+  margin: 0 0 2em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h1 {
+    color: $color-white;
+    margin: 0;
+    align-self: center;
+  }
+
+  .samhsa-logo {
+    fill: $color-white;
+    height: 50px;
+  }
+}
+
+.form-section {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.sidebar {
+  background: #f0f0f0;
+  padding: 1em;
+
+  .form-nav {
+    list-style-type: none;
+    padding: 0;
+
+    .form-nav-item {
+      width: 100%;
+      padding: 0.5em 0;
+      font-size: 20px;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
+
+.form-section-content {
+  padding: 1em 2em;
+
+  .form-element {
+    margin: 1em 0;
+  }
+
+  section h2 {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 30px;
+    color: $samhsa-blue;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      width: 80px;
+      content: "";
+      border-bottom: 4px solid #cd3835;
+      bottom: -11px;
+    }
+  }
+
+  .btn-actions {
+    margin: 2em 0;
+  }
+}

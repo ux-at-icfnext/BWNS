@@ -1,0 +1,25 @@
+
+{% for item in site.data.form_nav.form-navigation %}
+  <section id="{{ item.id }}" class="form-section">
+    <h2>{{ item.title }}</h2>
+
+    {% include sectionContent/{{ item.id }}.html %}
+
+    <div class="btn-actions">
+      {% if item.prev-page %}
+        <button class="usa-button btn-prev btn-action" value="{{ item.prev-page }}">Back</button>
+      {% endif %}
+
+      {% if item.next-page %}
+        <button class="usa-button btn-next btn-action" value="{{ item.next-page }}">Next</button>
+      {% endif %}
+
+      {% if item.id == "signatures" %}
+        <input class="usa-button" type="submit" value="Submit" />
+      {% else %}
+        <button class="usa-button btn-next usa-button--unstyled">save and return later</button>
+      {% endif %}
+    </div>
+
+  </section>
+{% endfor %}

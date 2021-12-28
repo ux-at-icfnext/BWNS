@@ -1,0 +1,49 @@
+form-navigation:
+  - page: Waiver Eligibility
+    title: Check your waiver Eligibility
+    id: waiverEligbility
+    prev-page:
+    next-page: purposeOfNotification
+
+  - page: Purpose of Notification
+    title: Purpose of Notification
+    id: purposeOfNotification
+    prev-page: waiverEligbility
+    next-page: practitionerInformation
+
+  - page: Practitioner Information
+    title: Practitioner Information
+    id: practitionerInformation
+    prev-page: purposeOfNotification
+    next-page: locationInformation
+
+  - page: Location Information
+    title: Location Information
+    id: locationInformation
+    prev-page: practitionerInformation
+    next-page: certification
+
+  - page: Certification
+    title: Certifications
+    id: certification
+    prev-page: locationInformation
+    next-page: trianing
+
+  - page: Trianing
+    title: Certification of Qualifying Criteria
+    id: trianing
+    prev-page: certification
+    next-page: locatorOptIn
+
+  - page: Locator Opt-in
+    title: Publish My Information in the Treatment Locator
+    id: locatorOptIn
+    prev-page: trianing
+    next-page: signatures
+
+  - page: Signatures
+    title: Electronic Signatures
+    id: signatures
+    prev-page: locatorOptIn
+    next-page:
+

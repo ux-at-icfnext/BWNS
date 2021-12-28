@@ -1,10 +1,22 @@
 ---
 ---
 <html>
-    {% include partials/head.html %}
-    <body>
-        <div id="main-content" class="grid-container">
-            {{ content }}
+  {% include partials/head.html %}
+  <body>
+  {% include partials/header.html %}
+    <div id="main-content" class="grid-container">
+      <div class="grid-row">
+        <div class="grid-col-4 sidebar">
+          {% include partials/form-navigation.html %}
         </div>
-    </body>
+        <div class="grid-col-8 form-section-content">
+        <form class="">
+          {% include partials/form-sections.html %}
+        </form>
+        </div>
+        
+      </div>
+        
+    </div>
+  </body>
 </html>

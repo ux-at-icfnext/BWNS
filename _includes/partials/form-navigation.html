@@ -1,0 +1,8 @@
+<h2>Welcome, user!</h2>
+<ul class="form-nav">
+{% for item in site.data.form_nav.form-navigation %}
+  <li class="form-nav-item">
+    {{ item.page }}
+  </li>
+{% endfor %}
+</ul>
