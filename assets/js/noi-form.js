@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       e.preventDefault();
       formSections.forEach(element => element.classList.remove("active"));
       btnValue = this.getAttribute("value");
-      console.log("Button Value" + " " + btnValue);
+      //console.log("Button Value" + " " + btnValue);
       formSection = document.getElementById(btnValue);
       formSection.classList.add("active");
     }, false);
