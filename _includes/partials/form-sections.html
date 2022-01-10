@@ -3,6 +3,17 @@
   <section id="{{ item.id }}" class="form-section">
     <h2>{{ item.title }}</h2>
 
+    <section class="usa-site-alert usa-site-alert--info" aria-label="Site alert">
+      <div class="usa-alert">
+        <div class="usa-alert__body">
+          <h3 class="usa-alert__heading">Error message</h3>
+          <p class="usa-alert__text">
+            You must select an option to proceed.
+          </p>
+        </div>
+      </div>
+    </section>
+
     {% include sectionContent/{{ item.id }}.html %}
 
     <div class="btn-actions">
@@ -17,7 +28,7 @@
       {% if item.id == "signatures" %}
         <input class="usa-button" type="submit" value="Submit" />
       {% else %}
-        <button class="usa-button btn-next usa-button--unstyled">save and return later</button>
+        <button class="usa-button usa-button--unstyled">save and return later</button>
       {% endif %}
     </div>
 

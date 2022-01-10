@@ -1,7 +1,13 @@
 <h2>Welcome, user!</h2>
 <ul class="form-nav">
 {% for item in site.data.form_nav.form-navigation %}
-  <li class="form-nav-item">
+  <li class="form-nav-item" id="section-{{ item.id }}">
+    <div class="progress-icon">
+      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+        
+      </svg>
+      <span class="font-sans-3xs margin-top-2 display-block" aria-hidden="true">check</span>
+    </div>
     {{ item.page }}
   </li>
 {% endfor %}

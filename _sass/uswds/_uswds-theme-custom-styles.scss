@@ -82,11 +82,41 @@ $color-white: #ffffff;
     padding: 0;
 
     .form-nav-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
       width: 100%;
       padding: 0.5em 0;
       font-size: 20px;
       font-weight: bold;
       border-bottom: 1px solid #ddd;
+
+      .progress-icon {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 0.5em;
+        text-align: center;
+        background: #ddd;
+
+        .usa-icon {
+          height: 30px;
+          fill: white;
+        }
+
+        span {
+          visibility: hidden;
+        }
+      }
+
+      &.in-progress .progress-icon {
+        background: #ddaa01 !important;
+      }
+
+      &.complete .progress-icon {
+        background:#008817;
+      }
     }
   }
 }
@@ -129,4 +159,18 @@ footer {
   margin-top: 4em;
   padding: 1em;
   border-top: 1px solid #000000;
+}
+
+.usa-site-alert--info .usa-alert {
+  display: none;
+  background-color: #801313;
+  color: white;
+
+  &:before {
+    background: url(../img/usa-icons/info.svg) no-repeat center / 2rem 2rem;
+  }
+
+  &.show {
+    display: block;
+  }
 }

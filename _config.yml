@@ -11,6 +11,9 @@ defaults:
     values:
       layout: default
 
+exclude:
+    - node_modules #so that npm directories won't be included in jekyll conversion functions
+
 #domain: ux-at-icfnextgithub.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 #url: https://ux-at-icfnextgithub.io  # the base hostname and protocol for your site, e.g. http://example.com
 #baseurl: /BWNS/

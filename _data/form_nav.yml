@@ -29,7 +29,7 @@ form-navigation:
     prev-page: locationInformation
     next-page: trianing
 
-  - page: Trianing
+  - page: Training
     title: Certification of Qualifying Criteria
     id: trianing
     prev-page: certification
