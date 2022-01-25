@@ -26,6 +26,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let nextButton = document.querySelector('btn-next');
         //console.log("Next Button", nextButton);
 
+        document.querySelector(".accordion-button").addEventListener("click", function(event) {
+          event.preventDefault();
+          this.classList.toggle("expanded");
+          document.querySelector("#e1").classList.toggle("open");
+        }, false);
+
         let formSectionID = document.getElementById(formSections[i].id);
         let formSectionID2 = formSections[i].id;
         //console.log("Total Answers", formSectionID.getElementsByTagName('fieldset').length);

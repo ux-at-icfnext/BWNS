@@ -7,9 +7,27 @@
       <div class="usa-alert">
         <div class="usa-alert__body">
           <h3 class="usa-alert__heading">Error message</h3>
-          <p class="usa-alert__text">
-            You must select an option to proceed.
-          </p>
+          <div class="usa-accordion">
+            <div class="accordion-heading">
+            <span>There are errors in the form below.</span> 
+              <button
+                class="accordion-button usa-button--unstyled"
+                aria-expanded="true"
+                aria-controls="e1">
+                View which fields have an issue
+                <div class="accordion-chevron">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                  </svg>
+                </div>
+              </button>
+              </div>
+              <div id="e1" class="accordion-content usa-prose">
+                <p>
+                  - Your practitioner type is not selected.
+                </p>
+              </div>
+          </div> <!--end accordion -->
         </div>
       </div>
     </section>

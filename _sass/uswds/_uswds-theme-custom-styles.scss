@@ -163,8 +163,8 @@ footer {
 
 .usa-site-alert--info .usa-alert {
   display: none;
-  background-color: #801313;
-  color: white;
+  background-color: #dda0a0;
+  border-left: 6px solid #801313;
 
   &:before {
     background: url(../img/usa-icons/info.svg) no-repeat center / 2rem 2rem;
@@ -172,5 +172,29 @@ footer {
 
   &.show {
     display: block;
+  }
+}
+
+#e1 {
+  display: none;
+  
+  &.open {
+    display: block;
+  }
+}
+
+.accordion-button {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+  .accordion-chevron {
+    transform: rotate(-90deg);
+  }
+  
+  &.expanded {
+    .accordion-chevron {
+      transform: rotate(90deg);
+    }
   }
 }
