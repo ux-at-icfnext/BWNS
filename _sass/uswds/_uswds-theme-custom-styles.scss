@@ -189,12 +189,12 @@ footer {
     flex-wrap: nowrap;
 
   .accordion-chevron {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
   }
-  
+
   &.expanded {
     .accordion-chevron {
-      transform: rotate(90deg);
+      transform: rotate(-90deg);
     }
   }
 }
