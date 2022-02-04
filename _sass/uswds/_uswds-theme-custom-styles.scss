@@ -372,3 +372,47 @@ footer {
 }
 
 .highcharts-credits {display:none;}
+
+//interactive links
+.homepage-nav {
+
+  li {
+    padding: 1em;
+    list-style-type: none;
+  }
+
+  .homepage_link {
+    text-decoration: none;
+    line-height: 1;
+    font-size: 2em;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    padding: 5px 5px;
+    overflow: hidden;
+    color: #333;
+    vertical-align: bottom;
+    transition: color .3s ease-out;
+  }
+
+  .homepage_link::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translateY(calc(100% - 2px));
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(60deg, #1a6986 0%, #1E384B 100%);
+    transition: transform .25s ease-out;
+  }
+
+  .homepage_link:hover { 
+    color: #fff; 
+  }
+  .homepage_link:hover::before {
+    transform: translateY(0);
+    transition: transform .25s ease-out;
+  }
+}
