@@ -3,23 +3,21 @@
 <html>
   {% include partials/head.html %}
   <body>
-  {% include partials/header.html %}
+  {% include partials/default-header.html %}
     <div id="main-content" class="grid-container">
-      <div class="grid-row">
-        <div class="grid-col-4 sidebar">
-          {% include partials/form-navigation.html %}
-        </div>
-        <div class="grid-col-8 form-section-content">
-          <form class="">
-            {% include partials/form-sections.html %}
-          </form>
-        </div>
-      </div>   
+        <h2>Welcome to the BWNS Live Prototype</h2>
+        <p>Click on any of the links below to continue.</p>
+
+        <ul>
+          <li>
+            <a href="/noi-form">NOI Form</a>
+          </li>
+          <li>
+            <a href="/hexMap">Hex Map</a>
+          </li>
+        </ul>  
     </div>
-    {% include partials/footer.html %}
     <script src="{{ base.url | prepend: site.url }}/assets/js/noi-form.js"></script>
     <script src="{{ base.url | prepend: site.url }}/assets/js/uswds.min.js"></script>
-    <!--script src="/assets/js/uswds.min.js" async></script-->
-    <!--script src="/assets/js/noi-form.js" async></script-->
   </body>
 </html>

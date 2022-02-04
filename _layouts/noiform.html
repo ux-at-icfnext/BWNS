@@ -1,0 +1,23 @@
+---
+---
+<html>
+  {% include partials/head.html %}
+  <body>
+  {% include partials/header.html %}
+    <div id="main-content" class="grid-container">
+      <div class="grid-row">
+        <div class="grid-col-4 sidebar">
+          {% include partials/form-navigation.html %}
+        </div>
+        <div class="grid-col-8 form-section-content">
+          <form class="">
+            {% include partials/form-sections.html %}
+          </form>
+        </div>
+      </div>   
+    </div>
+    {% include partials/footer.html %}
+    <script src="{{ base.url | prepend: site.url }}/assets/js/noi-form.js"></script>
+    <script src="{{ base.url | prepend: site.url }}/assets/js/uswds.min.js"></script>
+  </body>
+</html>
